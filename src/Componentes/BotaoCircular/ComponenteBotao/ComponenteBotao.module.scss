@@ -1,0 +1,49 @@
+@import '../../../styles/variaveis';
+
+
+
+*{
+  
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  background: $corBackgroundBotao;
+
+  &__loader{
+    position: relative;
+    display: flex;
+
+    span{
+
+      position: relative;
+      
+      width: 250px;
+      height: 250px;
+      background: $corBackgroundBotao;
+      border: 6px solid $corBackgroundBotao;
+      border-radius: 50%;
+      box-shadow: -8px -8px 15px rgba(255,255,255,1),
+      8px 8px 25px rgba(0,0,0,0.15);
+
+    }
+
+  }
+
+  .container__loader::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    box-shadow: inset 10px 10px 20px rgba(0,0,0,0.5),
+    inset -5px -5px -15px rgba(255,255,255,1);
+  }
+}
