@@ -142,11 +142,12 @@ body {
   position: absolute;
   color: #ff3c00;
   font-size: 1.5em;
-  z-index: 1;
+  z-index: 2;
   
   -webkit-text-stroke: 2px #df0e0e;
   /* nao consigo fazer funcionar */
-  animation: animateFogo 0.1s linear infinite;
+  animation: animateFogo 1s linear infinite;
+  filter: blur(1px);
   
 
 }
@@ -155,22 +156,23 @@ body {
   position: absolute;
   color: #fffb00;
   font-size: 1.5em;
-  z-index: 1;
+  z-index: 3;
   
   -webkit-text-stroke: 2px #df0e0e;
   /* nao consigo fazer funcionar */
-  animation: animateFogo 0.2s linear infinite;
+  animation: animateFogo 0.4s linear infinite;
+  filter: blur(1px);
 
 }
 .faFireSimple{
   position: absolute;
-  color: #ffef0a;
+  color: #ff4f0a;
   font-size: 1.5em;
-  z-index: 2;
+  z-index: 1;
   
   -webkit-text-stroke: 2px #df0e0e;
   /* nao consigo fazer funcionar */
-  animation: animateFogo 0.3s linear infinite;
+  animation: animateFogo 0.6s linear infinite;
   filter: blur(5px);
 
 }
@@ -179,10 +181,16 @@ body {
   0%,
   100% {
     transform: translate(0px, 31px) rotate(180deg) scale(1.1);
+    filter: blur(1px);
   }
 
   50% {
-    transform: translate(0px, 35px) rotate(180deg);
+    transform: translate(1px, 35px) rotate(180deg);
+    filter: blur(2px);
+  }
+  75%{
+    transform: translate(-1px, 35px) rotate(180deg);
+    filter: blur(3px);
   }
 
 }
