@@ -1,14 +1,18 @@
 
-import BotaoFoguete from '../../Componentes/BotaoFoguete'
+import BotaoFoguete from '../../Componentes/Botoes/Foguete'
+
 import styles from './PaginaInicial.module.scss'
+
+
+
 
 
 export default function PaginaInicial() {
   return (
-
-  <div className={styles.teste}>
+<>
+  <div className={styles.teste}> 
    <BotaoFoguete/>
   </div>
-    
+</>
   )
 }

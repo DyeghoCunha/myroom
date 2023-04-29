@@ -1,7 +1,7 @@
-@import '../../styles/variaveis';
+
 
 :root {
-  --botaoLargura: 15.625em;
+  --botaoLargura: 250px;
   --botaoAltura: var(--botaoLargura);
   --containerAltura: var(--botaoLargura);
   --corBackGroundBotao: #eaeef0;
@@ -11,15 +11,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
-body {
+.container {
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-
+  
 
   //max-height: $containerAltura;
   //max-width: $containerAltura;
@@ -32,6 +33,7 @@ body {
   display: flex;
   //justify-content: center;
   //align-items: center;
+  background-color: #eaeef0;
 
 }
 
@@ -87,6 +89,7 @@ body {
   background-position: center;
 
   animation: animate 3s linear infinite;
+  
 }
 
 @keyframes animate {
@@ -127,45 +130,55 @@ body {
 
 
 }
-
-.faRocket2 {
+.faRocket2{
   position: absolute;
   z-index: 2;
-  width: 3.6em;
+  width: 57px;
+  
+ 
+  -webkit-text-stroke: 2px #000000;
+  /* nao consigo fazer funcionar */
   animation: animateRocket 0.3s linear infinite;
 }
 
-.faFire {
+.faFire{
   position: absolute;
   color: #ff3c00;
   font-size: 1.5em;
   z-index: 2;
+  
+  -webkit-text-stroke: 2px #df0e0e;
+  /* nao consigo fazer funcionar */
   animation: animateFogo 1s linear infinite;
   filter: blur(1px);
-
+  
 
 }
 
-.faFireCurved {
+.faFireCurved{
   position: absolute;
   color: #fffb00;
   font-size: 1.5em;
   z-index: 3;
+  
+  -webkit-text-stroke: 2px #df0e0e;
+  /* nao consigo fazer funcionar */
   animation: animateFogo 0.4s linear infinite;
   filter: blur(1px);
 
 }
-
-.faFireSimple {
+.faFireSimple{
   position: absolute;
   color: #ff4f0a;
   font-size: 1.5em;
   z-index: 1;
+  
+  -webkit-text-stroke: 2px #df0e0e;
+  /* nao consigo fazer funcionar */
   animation: animateFogo 0.6s linear infinite;
   filter: blur(5px);
 
 }
-
 @keyframes animateFogo {
 
   0%,
@@ -178,8 +191,7 @@ body {
     transform: translate(1px, 35px) rotate(180deg);
     filter: blur(2px);
   }
-
-  75% {
+  75%{
     transform: translate(-1px, 35px) rotate(180deg);
     filter: blur(3px);
   }
@@ -203,14 +215,15 @@ body {
 .faCloud {
 
   position: absolute;
-
+  
   z-index: 3;
-
+ 
   top: calc(35px * var(--i));
   left: calc(45px * var(--i));
   font-size: 2em;
   color: #fff;
- 
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000000;
   animation: animateClouds 2s linear infinite;
   animation-delay: calc(-0.5s * var(--i));
 }
@@ -220,14 +233,14 @@ body {
 .faCloud2 {
 
   position: absolute;
-
+  
   z-index: 3;
-  width: 1.20em;
+  width: 40px;
   top: calc(35px * var(--i));
   left: calc(45px * var(--i));
   font-size: 2.2em;
   color: #000000b2;
-
+  
 
   animation: animateClouds 2s linear infinite;
 

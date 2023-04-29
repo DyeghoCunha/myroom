@@ -17,15 +17,15 @@ export default function BotaoFoguete() {
   const var3 = { '--i': 3 };
 
   const contorno = { '-webkit-text-stroke': '2px black' };
-
+  
 
   return (
-    <body>
+    <section className={styles.container}>
 
       <div className={styles.loader}>
 
         <div className={styles.rocket}>
-
+        
 
           <FontAwesomeIcon icon={faRocket} className={styles.faRocket} />
           <FontAwesomeIcon icon={faFire} className={styles.faFire}/>
@@ -50,7 +50,7 @@ export default function BotaoFoguete() {
 
         <span><i></i></span>
       </div>
-    </body>
+    </section>
 
 
   )
