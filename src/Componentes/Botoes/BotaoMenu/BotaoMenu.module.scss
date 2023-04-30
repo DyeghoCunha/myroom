@@ -1,3 +1,4 @@
+@import '../../../styles/_variaveis.scss';
 
 
 $botaoLargura: calc(60px);
@@ -21,14 +22,12 @@ $corBackGroundBotao: #eaeef0;
   border-radius: 50%;
   max-height: $botaoAltura;
   max-width: $botaoLargura;
-  background: #eaeef0;
+  background: $corFundo;
 }
 
 .loader {
   position: relative;
   display: flex;
-  //justify-content: center;
-  //align-items: center;
 
 }
 
@@ -37,18 +36,14 @@ $corBackGroundBotao: #eaeef0;
   position: relative;
   width: $botaoLargura;
   height: $botaoAltura;
-  background: #eaeef0;
-  border: 6px solid #eaeef0;
+  background: $corFundo;
+  border: 2px solid $corFundo;
   border-radius: 10%;
-  box-shadow: -8px -8px 15px rgba(255, 255, 255, 1),
+  box-shadow: -8px -8px 15px $corClaraLuz,
     8px 8px 25px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 
 }
-
-
-
-
 
 .loader span::before {
   content: '';
@@ -56,35 +51,39 @@ $corBackGroundBotao: #eaeef0;
   inset: 0;
   border-radius: 5%;
   box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.5),
-    inset -5px -5px 15px rgba(255, 255, 255, 1);
+    inset -5px -5px 15px $corClaraLuz;
 }
 
 .loader span::after {
   content: '';
   position: absolute;
   inset: calc($botaoAltura * 0.04);
-  border: 0px solid #eaeef0;
-  background: #eaeef0;
+
+  border: 12px  solid $corFundo;
+  
+  background: $corFundo;
+  
   border-radius: 5%;
-  box-shadow:
-    8px 8px 25px rgba(0, 0, 0, 0.15),
-    inset 3px 3px 10px rgba(0, 0, 0, 0.15),
-    inset -1px -1px 15px rgba(255, 255, 255, 1);
+  
+   
 }
 .click{
   
   position: absolute;
-  width: calc($botaoLargura - 3px);
-  height: calc($botaoAltura - 3px);
-  z-index: 100;
+  width: calc($botaoLargura - 0px);
+  height: calc($botaoAltura - 0px);
+  z-index: 101;
   border-radius: 10%;
-  background-color: #eaeef0;
-  border: 6px solid #eaeef0;
+  background-color: $corFundo;
+  border: 6px solid $corFundo;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 
 }
-
 .clickIn{
   opacity: 1;
 }
@@ -93,10 +92,9 @@ $corBackGroundBotao: #eaeef0;
   inset: calc($botaoLargura * -0.2);
   border-radius: 5%;
   filter: blur(5px);
-  background: linear-gradient(#42abff, #ff4f8b, #ffeb3b);
+  background: linear-gradient($cyberblue, $cyberyellow, $cybergreen);
   background-position: center;
-  animation: animate 1s linear infinite
-
+  animation: animate 2s linear infinite;
 }
 
 @keyframes animate {
@@ -117,6 +115,7 @@ $corBackGroundBotao: #eaeef0;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+ background-color: transparent;
 
   width: $botaoLargura -15px;
   height: $botaoAltura -15px;
@@ -126,8 +125,17 @@ $corBackGroundBotao: #eaeef0;
 
 .rocket .faRocket {
   position: absolute;
-  color: #ff518c;
+  color: $cyberyellow;
   font-size: calc($botaoAltura/1.9);
   z-index: 1;
 
+}
+
+.iconeOff{
+  position: absolute;
+  color: $corClara;
+  font-size: calc($botaoAltura/1.9);
+  
+  z-index: 101;
+  display: flex;
 }

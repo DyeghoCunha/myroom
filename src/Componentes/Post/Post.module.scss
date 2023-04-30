@@ -1,0 +1,97 @@
+@import '../../styles/variaveis';
+
+.post {
+  text-align: center;
+  width: 282px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 0px 0px 10px 10px;
+  padding-bottom: 1.5rem;
+  transition: transform .2s;
+}
+
+.post:hover {
+  transform: translate(0, -1rem);
+}
+
+.capa {
+  width: 100%;
+}
+
+.titulo {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.25rem;
+  color: var(--azul-escuro);
+  line-height: 1.75rem;
+  margin: 1.5rem 0 1.75rem;
+}
+
+.botaoLer {
+  display: inline-block;
+  border-radius: 24px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  background-color: var(--azul-medio);
+  color: var(--branco);
+  border: 3px solid var(--azul-medio);
+  cursor: pointer;
+  transition: 0.2s
+}
+
+.botaoLer:hover {
+  border: 3px solid var(--azul-escuro);
+}
+
+@media (max-width: 1100px) {
+  .post {
+      width: 336px;
+  }
+  .titulo {
+      font-weight: 600;
+  }
+  .botaoLer {
+      padding: 0.6875rem 1.5rem;
+      font-size: 1.375rem;
+  }
+}
+
+$botaoLargura: 282px;
+
+
+
+.loader{
+
+  position: relative;
+  width: $botaoLargura;
+ 
+  background: $corFundo;
+  border: 2px solid $corFundo;
+  border-radius: 10%;
+  box-shadow: -8px -8px 15px $corClaraLuz,
+    8px 8px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+
+}
+
+.loader .faRocket::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 5%;
+  box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.5),
+    inset -5px -5px 15px $corClaraLuz;
+}
+
+.loader .faRocket::after {
+  content: '';
+  position: absolute;
+  inset: calc($botaoLargura * 0.04);
+
+  border: 12px  solid $corFundo;
+  
+  background: $corFundo;
+  
+  border-radius: 5%;
+  
+   
+}

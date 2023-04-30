@@ -8,9 +8,9 @@ import { useLocation } from 'react-router-dom'
 
 
 
-export default function BotaoMenu({icone}) {
+export default function BotaoMenu({ icone }) {
   const localizacao = useLocation();
-  
+
   return (
 
     <section className={styles.container}>
@@ -18,17 +18,18 @@ export default function BotaoMenu({icone}) {
       <div className={styles.loader}>
 
         <div className={styles.rocket}>
-        
-         <FontAwesomeIcon icon={faHouse}  className={`${styles.faRocket} `}/>
-        
+          <div className={`${styles.faRocket} `}>{icone}</div>
         </div>
-        <div className={` ${styles.click} ${localizacao.pathname==='/' ? '' : styles.clickIn}`} ></div>
+
+        <div className={` ${styles.click} ${localizacao.pathname === '/' ? '' : styles.clickIn}`} >
+        <div className={styles.iconeOff}>{icone}</div>
+        </div>
 
         <span><i></i></span>
 
-       
+
       </div>
-      
+
     </section>
 
 
