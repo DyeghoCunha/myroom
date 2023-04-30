@@ -1,21 +1,20 @@
 @import '../../styles/variaveis';
 
+$botaoLargura: 282px;
+
+
+
 .post {
   text-align: center;
   width: 282px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+  
   border-radius: 0px 0px 10px 10px;
   padding-bottom: 1.5rem;
   transition: transform .2s;
 }
 
-.post:hover {
-  transform: translate(0, -1rem);
-}
 
-.capa {
-  width: 100%;
-}
+
 
 .titulo {
   font-family: var(--fonte-secundaria);
@@ -55,18 +54,41 @@
   }
 }
 
-$botaoLargura: 282px;
+.containerPost{
+  position: relative;
+  
+}
 
 
+.containerPost button{
+  position: absolute;
+  z-index: 5000;
+  transform: translate(0px,200px);
+}
+
+.capa{
+  display: flex;
+  position: absolute;
+  z-index: 500;
+  border:10px solid $corFundo;
+  width: 100%;
+  height: auto;
+  padding-bottom: 117px;
+
+}
+.capa:hover{
+  padding: 9px;
+  border: 0px solid $corFundo;
+}
 
 .loader{
 
   position: relative;
   width: $botaoLargura;
- 
+  height: 280px;
   background: $corFundo;
   border: 2px solid $corFundo;
-  border-radius: 10%;
+  border-radius: 5%;
   box-shadow: -8px -8px 15px $corClaraLuz,
     8px 8px 25px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -78,6 +100,7 @@ $botaoLargura: 282px;
   position: absolute;
   inset: 0;
   border-radius: 5%;
+  //background-color: red;
   box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.5),
     inset -5px -5px 15px $corClaraLuz;
 }
@@ -85,13 +108,35 @@ $botaoLargura: 282px;
 .loader .faRocket::after {
   content: '';
   position: absolute;
-  inset: calc($botaoLargura * 0.04);
-
-  border: 12px  solid $corFundo;
+  inset: calc($botaoLargura * 0.03);
+  
+ 
+  border: 5px  solid $corFundo;
   
   background: $corFundo;
   
   border-radius: 5%;
-  
-   
+
 }
+
+.loader span i{
+  position: absolute;
+  inset: calc($botaoLargura * -0.5);
+  border-radius: 5%;
+  filter: blur(5px);
+  background: linear-gradient($cyberblue, $cyberyellow, $cybergreen);
+  background-position: center;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+

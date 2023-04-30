@@ -8,7 +8,7 @@ import posts from 'assets/json/posts.json'
 export default function Inicio() {
   return (
     <main>
-      <Banner />
+      {/* <Banner /> */}
 
       <ul className={styles.posts}>
         {posts.map((post) => (
