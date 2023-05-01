@@ -1,0 +1,19 @@
+@import '../../styles/variaveis';
+
+.rodape {
+  background-color: $corFundo;
+  
+  color: var(--branco);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
