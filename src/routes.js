@@ -5,21 +5,44 @@ import Inicio from './Paginas/Inicio';
 import SobreMim from './Paginas/SobreMim';
 import Menu from './Componentes/Menu';
 import Banner from './Componentes/Banner';
-import Rodape from 'Componentes/Rodape';
+import Rodape from './Componentes/Rodape';
+import PaginaPadrao from './Componentes/PaginaPadrao';
 
 export default function AppRoutes() {
   return (
     <BrowserRouter>
-      <Menu/>
-      
-      
+
+      <Menu />
+
       <Routes>
-        <Route path="/" element={<Inicio/>}/>
-        <Route path="/sobremim" element={<SobreMim/>}/>
-        <Route path="*" element={<div>Pagina Nao Encontrada</div>}/>
+
+        <Route path='/' element={<PaginaPadrao />}>
+          
+          <Route path="sobremim" element={<SobreMim />} />
+        </Route>
+        <Route index element={<Inicio />} />
+        {/* 
+
+        Na Rota "/" a Estrutura a ser renderizada eh:
+
+        <PaginaPadrao>
+          <Inicio/>
+        </PaginaPadrao>
+
+        Na Rota "/sobremim" a Estrutura a ser renderizada eh:
+
+        <PaginaPadrao>
+          <SobreMim/>
+        </PaginaPadrao>
+        
+        */}
+
+        <Route path="*" element={<div>Pagina Nao Encontrada</div>} />
+
       </Routes>
 
-      <Rodape/>
+      <Rodape />
+
     </BrowserRouter>
   )
 }

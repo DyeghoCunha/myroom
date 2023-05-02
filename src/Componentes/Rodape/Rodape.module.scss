@@ -1,19 +1,41 @@
 @import '../../styles/variaveis';
+$botaoAltura: 20px;
+$botaoLargura: $botaoAltura;
 
 .rodape {
   background-color: $corFundo;
-  
+
   color: var(--branco);
-  padding: 1rem 0;
+  
   display: flex;
+  
   justify-content: center;
   align-items: center;
-  column-gap: .5rem;
+
+
 }
 
-.container{
+/* .position__fixed{
+  position: fixed;
+  bottom: 0;
+  z-index: 200000;
+  width: 100vw;
+}
+ */
+
+
+.container {
+  
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 100vw;
+  overflow: hidden;
+
+  height: 100px;
+  
+  
+
 }
+

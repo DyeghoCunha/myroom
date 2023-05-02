@@ -1,14 +1,12 @@
-import BotaoMenu from 'Componentes/Botoes/BotaoMenu'
+
 import styles from './Rodape.module.scss'
 import '../../fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faCode } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin,faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
-
-
 import React from 'react'
-import BotaoGenerico from 'Componentes/Botoes/BotaoGenerico'
+import BotaoGenerico from '../Botoes/BotaoGenerico'
 
 export default function Rodape() {
   const iconeLinkedin = <FontAwesomeIcon icon={faLinkedin}/>
@@ -23,16 +21,20 @@ export default function Rodape() {
 
 
   return (
-    <footer className={styles.rodape}>
+    <footer className={`${styles.rodape} ${styles.position__fixed}`}>
 
       <section className={styles.container}>
-
+     
       <BotaoGenerico icone={iconeLinkedin} link={linkLinkedin}/>
       <BotaoGenerico icone={iconeGitHub} link={linkGitHub}/>
       <BotaoGenerico icone={iconeWats} link={linkWats}/>
       <BotaoGenerico icone={iconeAlura} link={linkAlura}/>
+      
 
+      
       </section>
+
+      
 
     </footer>
   )

@@ -48,12 +48,12 @@ $botaoLargura: 282px;
   
   display: inline-block;
   border-radius: 24px;
-  padding: 0.75rem 1.5rem;
+  
   font-size: 1.125rem;
   line-height: 1.125rem;
-  background-color: var(--azul-medio);
+ 
   color: var(--branco);
-  border: 3px solid var(--azul-medio);
+ 
   cursor: pointer;
   transition: 0.2s;
   z-index: 1000;
@@ -80,7 +80,7 @@ $botaoLargura: 282px;
 .botaoLer::after {
   content: '';
   position: absolute;
-  inset: 3px;
+  inset: 2px;
   border: 2px  solid $corFundo;
   background: $corFundo;
   border-radius: 5%;
@@ -122,6 +122,7 @@ $botaoLargura: 282px;
 
 .containerPost{
   position: relative;
+
   
 }
 
@@ -130,16 +131,21 @@ $botaoLargura: 282px;
   display: flex;
   position: absolute;
   z-index: 500;
-  border:12px solid $corFundo;
-  width: 100%;
-  height: auto;
+  border:11px solid $corFundo;
+  width: 99.5%;
+  height: 274px;
   padding-bottom: 115px;
-  top: -11px;
+  border-radius:5%;
+  top: -9.4px;
+  right: 1px;
+  left: 0.5px;
+  
 
 }
 .capa:hover{
   padding: 9px;
   border: 0px solid $corFundo;
+  height: auto;
 }
 
 .loader{
@@ -153,6 +159,7 @@ $botaoLargura: 282px;
   box-shadow: -8px -8px 15px $corClaraLuz,
     8px 8px 25px rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  border: 2px $corClaraLuz solid;
 
 }
 
@@ -164,18 +171,14 @@ $botaoLargura: 282px;
   //background-color: red;
   box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.5),
     inset -5px -5px 15px $corClaraLuz;
+   
 }
 
 .loader .faRocket::after {
   content: '';
   position: absolute;
-  inset: calc($botaoLargura * 0.03);
-  
- 
-  border: 5px  solid $corFundo;
-  
+  inset: calc($botaoLargura * 0.035);
   background: $corFundo;
-  
   border-radius: 5%;
 
 }
@@ -188,6 +191,8 @@ $botaoLargura: 282px;
   background: linear-gradient($cyberblue, $cyberyellow, $cybergreen);
   background-position: center;
   animation: animate 2s linear infinite;
+ 
+
 }
 
 @keyframes animate {

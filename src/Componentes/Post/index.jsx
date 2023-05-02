@@ -1,4 +1,4 @@
-import BotaoMenu from 'Componentes/Botoes/BotaoMenu'
+import BotaoMenu from '../Botoes/BotaoMenu'
 import styles from './Post.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpenReader } from '@fortawesome/free-solid-svg-icons';
