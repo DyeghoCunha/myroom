@@ -205,4 +205,20 @@ $botaoLargura: 282px;
   }
 }
 
+@media (max-width: 744px){
+.capa:focus{
+  padding: 9px;
+  border: 0px solid $corFundo;
+  height: auto;
+}
 
+.capa:active{ 
+  padding: 9px;
+  border: 0px solid $corFundo;
+  height: auto;
+
+
+}
+
+
+}
