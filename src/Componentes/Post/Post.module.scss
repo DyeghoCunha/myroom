@@ -132,14 +132,13 @@ $botaoLargura: 282px;
   display: flex;
   position: absolute;
   z-index: 500;
-  border:11px solid $corFundo;
-  width: 99.5%;
-  height: 274px;
+  border:12px solid $corFundo;
+  width: 100%;
+  
   padding-bottom: 115px;
   border-radius:5%;
-  top: -9.4px;
-  right: 1px;
-  left: 0.5px;
+  top: -10px;
+
   
 
 }
@@ -160,7 +159,7 @@ $botaoLargura: 282px;
   box-shadow: -8px -8px 15px $corClaraLuz,
     8px 8px 25px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  border: 2px $corClaraLuz solid;
+  //border: 2px $corClaraLuz solid;
 
 }
 
@@ -178,7 +177,7 @@ $botaoLargura: 282px;
 .loader .faRocket::after {
   content: '';
   position: absolute;
-  inset: calc($botaoLargura * 0.035);
+  inset: calc($botaoLargura * 0.033);
   background: $corFundo;
   border-radius: 5%;
 

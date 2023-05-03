@@ -1,0 +1,69 @@
+@import '../../styles/variaveis';
+
+$botaoLargura: 400px;
+
+
+
+.container__formulario{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  
+  position: relative;
+  width: $botaoLargura;
+  height: 390px;
+  background: $corFundo;
+  border: 2px solid $corFundo;
+  border-radius: 5%;
+  box-shadow:
+    -8px -8px 15px $corClaraLuz,
+    8px 8px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  
+ 
+}
+
+.botao{
+ padding-top: 10px;
+ position: absolute;
+ right: 150px;
+  
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  inset: 0px;
+  border-radius: 5%;
+  background-color: $corRoxa;
+  box-shadow:
+    inset 10px 10px 20px rgba(0, 0, 0, 0.5),
+    inset -5px -5px 15px $corClaraLuz;
+
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  inset: calc($botaoLargura * 0.05);
+  background: $corFundo;
+  opacity: 0.6;
+  border-radius: 5%;
+
+}
+
+.formulario{
+  position: absolute;
+  z-index: 1000000;
+  inset: calc($botaoLargura * 0.04);
+  padding-left: 30px;
+  padding-top: 20px;
+
+  
+
+}

@@ -6,7 +6,7 @@ import Banner from '../../Componentes/Banner'
 export default function SobreMim() {
   return (
 
-      <h1>Sobre Mim...</h1>
+      <BotaoFoguete/>
 
   )
 }

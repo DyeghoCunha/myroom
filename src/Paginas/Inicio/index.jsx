@@ -14,7 +14,7 @@ export default function Inicio() {
           <Post post={post} />
         </li>
       ))}
-    </ul>
+    </ul> 
 
   )
 }

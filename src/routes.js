@@ -7,6 +7,7 @@ import Menu from './Componentes/Menu';
 import Banner from './Componentes/Banner';
 import Rodape from './Componentes/Rodape';
 import PaginaPadrao from './Componentes/PaginaPadrao';
+import Formulario from './Componentes/Formulario';
 
 export default function AppRoutes() {
   return (
@@ -40,7 +41,7 @@ export default function AppRoutes() {
         <Route path="*" element={<div>Pagina Nao Encontrada</div>} />
 
       </Routes>
-
+        <Formulario/>
       <Rodape />
 
     </BrowserRouter>
