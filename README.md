@@ -16,3 +16,9 @@ Projeto desenvolvido para fixar conteúdo das aulas de REACT.js
 ## My Room!
 
 Como o Proprio nome ja diz, eh o meu espaco para colocar as coisas que eu gosto e as coisas que eu faco....tecnincamente eh o meu portifolio
+
+
+
+## Instalando o EMAIL SDK
+
+$ npm install @emailjs/browser --save

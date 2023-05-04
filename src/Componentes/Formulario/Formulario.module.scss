@@ -32,8 +32,10 @@ $botaoLargura: 400px;
  padding-top: 10px;
  position: absolute;
  right: 150px;
+ border: none;
   
 }
+
 
 .container::before {
   content: '';
@@ -67,3 +69,6 @@ $botaoLargura: 400px;
   
 
 }
+
+
+/* -----------------------Botao */
