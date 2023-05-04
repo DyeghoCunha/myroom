@@ -21,4 +21,9 @@ Como o Proprio nome ja diz, eh o meu espaco para colocar as coisas que eu gosto 
 
 ## Instalando o EMAIL SDK
 
-$ npm install @emailjs/browser --save
+npm install @emailjs/browser 
+
+## Instalando o MarkDown
+
+npm install ract-markdown
+

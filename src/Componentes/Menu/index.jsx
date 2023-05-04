@@ -13,8 +13,8 @@ export default function Menu() {
   const iconeHome = <FontAwesomeIcon icon={faHome}/>
   const iconeSaibaMais = <FontAwesomeIcon icon={faAddressCard} />
 
-  const localizacao = useLocation();
-  console.log(localizacao)
+ 
+  
 
   return (
     <header>

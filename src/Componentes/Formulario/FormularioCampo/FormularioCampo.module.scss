@@ -4,6 +4,11 @@
 
 $botaoLargura: 90%;
 
+input{
+  border: none;
+
+}
+
 .container{
 
   
@@ -29,7 +34,7 @@ $botaoLargura: 90%;
     background-color: $corRoxa;
     box-shadow:
       inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-      inset -2.5px -2.5px 7.5px $corClaraLuz;
+      inset -2.5px -2.5px 7.5px $corRoxaClara;
   
   }
   

@@ -9,6 +9,7 @@ $botaoLargura: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 
@@ -45,7 +46,7 @@ $botaoLargura: 400px;
   background-color: $corRoxa;
   box-shadow:
     inset 10px 10px 20px rgba(0, 0, 0, 0.5),
-    inset -5px -5px 15px $corClaraLuz;
+    inset -5px -5px 15px $corRoxaClara;
 
 }
 
