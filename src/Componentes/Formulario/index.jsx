@@ -58,6 +58,8 @@ export default function Formulario() {
     }
   }
 
+
+
   return (
     <section className={styles.container__formulario}>
       <div className={styles.container} action="">
@@ -69,7 +71,7 @@ export default function Formulario() {
           <CampoTexto placeholder={'Escreva sua Mensagem'} onInputChange={handleCampoTexto} />
          
             
-            <button className={styles.botao} type='submit'><BotaoGenerico icone={envelope} /></button>
+            {campoNome&&campoEmail&&campoTexto ? <button className={styles.botao} type='submit'><BotaoGenerico icone={envelope} /></button> : null}
           
 
         </form>

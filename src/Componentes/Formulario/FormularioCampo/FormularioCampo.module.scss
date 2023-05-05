@@ -23,6 +23,8 @@ input{
       4px 4px 12.5px rgba(0, 0, 0, 0.15);
     overflow: hidden;
    margin-bottom: 10px;
+   font-family: $fonte-normal;
+  
   
   }
   
@@ -50,7 +52,7 @@ input{
   .input{
     
     position: absolute;
-    backdrop-filter: blur(5px);
+   
     border-radius: 5px;
     width: 285px;
     height: 2em;

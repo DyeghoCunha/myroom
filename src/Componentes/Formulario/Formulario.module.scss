@@ -34,6 +34,7 @@ $botaoLargura: 400px;
  position: absolute;
  right: 150px;
  border: none;
+ 
   
 }
 
@@ -51,6 +52,7 @@ $botaoLargura: 400px;
 }
 
 .container::after {
+  
   content: '';
   position: absolute;
   inset: calc($botaoLargura * 0.05);

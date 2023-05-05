@@ -18,6 +18,8 @@ $botaoLargura: 90%;
     4px 4px 12.5px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   margin-bottom: 10px;
+  font-family: $fonte-bold;
+  font-size: 1.5rem;
 
 }
 
@@ -39,11 +41,12 @@ $botaoLargura: 90%;
   inset: calc($botaoLargura * 0.01);
   opacity: 0.6;
   border-radius: 5px;
+   z-index: 300000;
 }
 
 .campoTexto {
   position: absolute;
-  backdrop-filter: blur(5px);
+ 
   border-radius: 5px;
   width: 285px;
   height: 107px;
