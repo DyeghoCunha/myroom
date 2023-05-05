@@ -6,7 +6,7 @@ Projeto desenvolvido para fixar conteúdo das aulas de REACT.js
 | -------------  | --- |
 | :sparkles: Nome        | **My Room!**
 | :label: Tecnologias | React.Js, HTML5, SCSS.
-| :rocket: URL         | https://galaxias-nine.vercel.app
+| :rocket: URL         | https://myroom-six.vercel.app
 
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
