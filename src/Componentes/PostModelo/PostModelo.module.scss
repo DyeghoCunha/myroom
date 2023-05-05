@@ -1,12 +1,17 @@
+@import '../../styles/variaveis';
+
+
 .postModeloContainer {
-  color: var(--cor-fonte-post);
+  color: $corRoxa;
   position: relative;
+  
   
 }
 
 .fotoCapa,
 .titulo {
-  height: 2px;
+  height: 0px;
+  margin-top: 40px;
 }
 
 .fotoCapa {
@@ -20,7 +25,7 @@
 }
 
 .titulo {
-  font-family: var(--fonte-secundaria);
+  font-family: $cyberyellow;
   padding: 0 7.5rem;
   font-size: 4rem;
   display: flex;
@@ -28,7 +33,7 @@
 }
 
 .postConteudoContainer {
-  padding: 2.5rem 7.5rem 4.5rem;
+  padding: 4.5rem 7.5rem 4.5rem;
 }
 
 @media (max-width: 744px) {
@@ -41,7 +46,9 @@
 
   .fotoCapa,
   .titulo {
-      height: 20px;
+      height: 0px;
+      margin-top: 40px;
+      margin-bottom: 40px;
   }
 
   .titulo {
@@ -50,6 +57,6 @@
   }
 
   .postConteudoContainer {
-      padding: 0rem 1rem 1.5rem;
+      padding: 1rem 1rem 1rem 1rem;
   }
 }

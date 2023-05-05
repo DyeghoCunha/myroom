@@ -23,11 +23,11 @@ export default function AppRoutes() {
         <Route path='/' element={<PaginaPadrao />}>
 
           <Route path="sobremim" element={<SobreMim />} />
-          <Route path="posts/:id" element={<Post />} />
+          
         </Route>
 
         <Route index element={<Inicio />} />
-
+        <Route path="posts/:id" element={<Post />} />
         <Route path="*" element={<NaoEncontrada />} />
 
       </Routes>

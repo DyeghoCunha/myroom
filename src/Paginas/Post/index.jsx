@@ -6,6 +6,7 @@ import React from 'react'
 import PostModelo from "../../Componentes/PostModelo";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import './Post.scss'
+import NaoEncontrada from "../NaoEncontrada";
 
 
 
@@ -18,7 +19,7 @@ export default function Post() {
   })
 
   if(!post){
-    return <h1>Post nao encontrado</h1>
+    return <NaoEncontrada/>
   }
 
   return (

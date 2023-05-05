@@ -12,7 +12,7 @@ export default function Rodape() {
   const iconeLinkedin = <FontAwesomeIcon icon={faLinkedin}/>
   const linkLinkedin = 'https://www.linkedin.com/in/dyegho-cunha-aa4933b5/'
   const iconeGitHub = <FontAwesomeIcon icon={faGithub}/>
-  const linkGitHub = 'https://www.linkedin.com/in/dyegho-cunha-aa4933b5/'
+  const linkGitHub = 'https://github.com/DyeghoCunha'
   const iconeWats =<FontAwesomeIcon icon={faSquareWhatsapp} />
   const linkWats = 'https://wa.me/554799110554'
   const iconeAlura =<FontAwesomeIcon icon={faCode} />

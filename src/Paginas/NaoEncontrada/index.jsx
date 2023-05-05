@@ -17,7 +17,7 @@ const navegar = useNavigate();
 
       <div 
       className={styles.botaoContainer}
-      onClick={()=>navegar('/')}>
+      onClick={()=>navegar(-1)}>
         <button>
           <BotaoFoguete/>
           </button>

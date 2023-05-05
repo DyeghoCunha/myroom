@@ -10,7 +10,7 @@ import Banner from '../../Componentes/Banner'
 export default function Inicio() {
   return (
     <>
-      <Banner titulo={'Meus Trabalhos'} texto={'Projetos e outros assuntos'}/>
+      <Banner titulo={'Meu Artigos'} texto={'Projetos e outros assuntos'}/>
 
       <ul className={styles.posts}>
         {posts.map((post) => (
