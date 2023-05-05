@@ -9,7 +9,6 @@
 
 
 
-
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +28,7 @@
   //max-width: $containerAltura;
 
   background: $corFundo;
+  cursor: pointer;
 }
 
 .loader {

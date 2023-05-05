@@ -9,27 +9,29 @@ import Rodape from './Componentes/Rodape';
 import PaginaPadrao from './Componentes/PaginaPadrao';
 import Formulario from './Componentes/Formulario';
 import Post from './Paginas/Post'
+import NaoEncontrada from './Paginas/NaoEncontrada';
+
 
 export default function AppRoutes() {
   return (
     <BrowserRouter>
 
       <Menu />
-
+     
       <Routes>
 
         <Route path='/' element={<PaginaPadrao />}>
 
           <Route path="sobremim" element={<SobreMim />} />
-          <Route path= "posts/:id" element = {<Post/>}/>
+          <Route path="posts/:id" element={<Post />} />
         </Route>
 
         <Route index element={<Inicio />} />
-     
-        <Route path="*" element={<div>Pagina Nao Encontrada</div>} />
+
+        <Route path="*" element={<NaoEncontrada />} />
 
       </Routes>
-     
+
       <Rodape />
 
     </BrowserRouter>
@@ -40,7 +42,7 @@ export default function AppRoutes() {
 
 
 
-   {/* 
+{/* 
 
         Na Rota "/" a Estrutura a ser renderizada eh:
 

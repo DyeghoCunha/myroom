@@ -17,8 +17,9 @@ export default function Post() {
     return post.id === Number(parametros.id);
   })
 
-  console.log(post)
-
+  if(!post){
+    return <h1>Post nao encontrado</h1>
+  }
 
   return (
 

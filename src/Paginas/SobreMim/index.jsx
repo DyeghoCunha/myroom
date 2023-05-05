@@ -3,38 +3,40 @@ import BotaoFoguete from '../../Componentes/Botoes/Foguete'
 import PaginaInicial from '../PaginaInicial'
 import Banner from '../../Componentes/Banner'
 import PostModelo from '../../Componentes/PostModelo'
-import fotoCapa from '../../assets/imagens/sobre_mim_capa.png'
+import fotoCapa from '../../assets/imagens/sobre_mim_capa.jpeg'
 import styles from './SobreMim.module.scss'
-import fotoSobreMim from '../../assets/imagens/sobre_mim_foto.png'
+import fotoSobreMim from '../../assets/imagens/minha_foto.png'
 import Formulario from '../../Componentes/Formulario'
 
 export default function SobreMim() {
   return (
     <>
-      <PostModelo fotoCapa={fotoCapa} titulo='Sobre Mim'>
+      <Banner titulo={'Sobre Mim!'} texto={'Meu nome'}/>
+
+      <PostModelo titulo=''>
         <h3 className={styles.subtitulo}> Ola meu nome eh Dyegho</h3>
 
-        <img src={fotoSobreMim} alt="" className={styles.fotoSobreMim} />
+        {/* <img src={fotoSobreMim} alt="" className={styles.fotoSobreMim} /> */}
 
         <p className={styles.paragrafo}>
-          Oi, tudo bem? Eu sou instrutor de Front-end na Alura e estou feliz de te ver por aqui.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facere impedit, natus necessitatibus iusto eum delectus ad, neque perspiciatis harum animi, nesciunt quia error. Repudiandae provident assumenda repellat perferendis nostrum.
         </p>
         <p className={styles.paragrafo}>
-        Minha história com programação começou no Instituto Federal do Piauí (IFPI), quando fiz o ensino médio integrado ao curso de Informática. Eu aprendi lógica de programação e o básico de várias linguagens, como PHP, Python, Java, mas sem aprofundar muito em cada uma delas. Eu gostava muito de estudar programação, mas na época não fazia ideia de que trabalharia com isso hoje.
-        </p>
-
-        <p className={styles.paragrafo}>
-          No ensino superior, escolhi cursar Engenharia Elétrica na Universidade Federal do Piauí (UFPI). Lá eu consegui entrar no PET (Programa de Educação Tutorial), um grupo acadêmico que contribui de diversas formas para o curso. Lá eu tive a oportunidade de estudar desenvolvimento web para ser um dos mantenedores do site deles.
-        </p>
-        <p className={styles.paragrafo}>
-        Com isso tive minha experiência de dev mais próxima da realidade, com prazos de implementação para o site, e aprendi muito enquanto codificava.
-        </p>
-        <p className={styles.paragrafo}>
-          E foi enquanto eu estava no PET que decidi procurar um estágio em desenvolvimento web. Eu encontrei uma vaga na Alura para o Scuba Team e percebi que ela aliava duas paixões minhas: programação e educação. Para minha felicidade, fui escolhido para fazer parte do time.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet consequuntur officiis, iure eos debitis accusantium. Voluptas, provident vitae assumenda perferendis distinctio voluptatem laboriosam nesciunt facilis, praesentium dicta laborum reprehenderit eius!
         </p>
 
         <p className={styles.paragrafo}>
-          Desde então, tem sido aprenas aprendizados atrás de aprendizados. A Alura é uma escola não só para seus alunos e alunas, mas também para os colaboradores e colaboradoras. Hoje sou muito feliz de ter a oportunidade de trazer esses conteúdos ricos e encantadores para você. Espero que aprenda bastante!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam qui commodi perferendis voluptatibus sint unde voluptates, voluptatem magnam cupiditate deserunt nihil deleniti impedit quod recusandae laudantium dicta at voluptatum beatae?
+        </p>
+        <p className={styles.paragrafo}>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero officia debitis maxime aliquid non nesciunt rem saepe, fugit dolores corporis nemo tenetur, fugiat, fuga vel. Magni, praesentium quam. Quae, architecto.
+        </p>
+        <p className={styles.paragrafo}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero officia debitis maxime aliquid non nesciunt rem saepe, fugit dolores corporis nemo tenetur, fugiat, fuga vel. Magni, praesentium quam. Quae, architecto.
+        </p>
+
+        <p className={styles.paragrafo}>
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero officia debitis maxime aliquid non nesciunt rem saepe, fugit dolores corporis nemo tenetur, fugiat, fuga vel. Magni, praesentium quam. Quae, architecto.
         </p>
       </PostModelo>
 

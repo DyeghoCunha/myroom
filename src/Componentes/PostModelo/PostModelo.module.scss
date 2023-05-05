@@ -1,11 +1,12 @@
 .postModeloContainer {
   color: var(--cor-fonte-post);
   position: relative;
+  
 }
 
 .fotoCapa,
 .titulo {
-  height: 204px;
+  height: 2px;
 }
 
 .fotoCapa {
@@ -40,7 +41,7 @@
 
   .fotoCapa,
   .titulo {
-      height: 104px;
+      height: 20px;
   }
 
   .titulo {
@@ -49,6 +50,6 @@
   }
 
   .postConteudoContainer {
-      padding: 2rem 1rem 1.5rem;
+      padding: 0rem 1rem 1.5rem;
   }
 }

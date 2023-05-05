@@ -39,7 +39,7 @@ $botaoLargura: 282px;
   z-index: 1000;
  
   cursor: pointer;
-  border-radius: 5%;
+  border-radius: 5px;
 
 }
 
@@ -72,7 +72,7 @@ $botaoLargura: 282px;
   content: '';
   position: absolute;
   inset: 0;
-  border-radius: 5%;
+  border-radius: 5px;
   box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.5),
     inset -5px -5px 15px $corClaraLuz;
    
@@ -84,7 +84,7 @@ $botaoLargura: 282px;
   inset: 2px;
   border: 2px  solid $corFundo;
   background: $corFundo;
-  border-radius: 5%;
+  border-radius: 5px;
   opacity: 0.5;
  
 
@@ -155,7 +155,7 @@ $botaoLargura: 282px;
   height: 280px;
   background: $corFundo;
   border: 2px solid $corFundo;
-  border-radius: 5%;
+  border-radius: 5px;
   box-shadow: -8px -8px 15px $corClaraLuz,
     8px 8px 25px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -167,7 +167,7 @@ $botaoLargura: 282px;
   content: '';
   position: absolute;
   inset: 0;
-  border-radius: 5%;
+  border-radius: 5px;
   //background-color: red;
   box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.5),
     inset -5px -5px 15px $corClaraLuz;
@@ -179,14 +179,14 @@ $botaoLargura: 282px;
   position: absolute;
   inset: calc($botaoLargura * 0.033);
   background: $corFundo;
-  border-radius: 5%;
+  border-radius: 5px;
 
 }
 
 .loader span i{
   position: absolute;
   inset: calc($botaoLargura * -0.5);
-  border-radius: 5%;
+  border-radius: 5px;
   filter: blur(5px);
   background: linear-gradient($cyberblue, $cyberyellow, $cybergreen);
   background-position: center;

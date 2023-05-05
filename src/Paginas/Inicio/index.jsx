@@ -5,10 +5,13 @@ import styles from './Inicio.module.scss'
 import Card from '../../Componentes/Card'
 import posts from '../.././assets/json/posts.json'
 import Formulario from '../../Componentes/Formulario'
+import Banner from '../../Componentes/Banner'
 
 export default function Inicio() {
   return (
     <>
+      <Banner titulo={'Meus Trabalhos'} texto={'Projetos e outros assuntos'}/>
+
       <ul className={styles.posts}>
         {posts.map((post) => (
           <li key={post.id}>

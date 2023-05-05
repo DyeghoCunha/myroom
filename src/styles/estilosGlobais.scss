@@ -6,21 +6,32 @@
 
 body::-webkit-scrollbar{
  width: 10px; 
+ height: 10px;
+ 
 }
 
 
 body::-webkit-scrollbar-thumb{
-  background-color:$azul-claro;
-  background-image: url(./sabreScroll.png);
+  background-color:$corRoxa;
+  // background-image: url(./sabreScroll.png);
   background-position: center;
   background-repeat: no-repeat;
+  
   border-radius: 20px;
+
+  border: 1px solid $corFundo;
+ 
+  box-shadow:
+    inset -2px -2px 3px $corClaraLuz,
+   inset  2px 2px 3px rgba(0, 0, 0, 0.15);
+
 }
 
 
 body::-webkit-scrollbar-track{
-  background: $azul-escuro;
- // background: linear-gradient($azul-escuro, $azul-claro);
+  background: $corFundo;
+/*   background: linear-gradient($corFundo, $corEscura); */
+
 }
 
 @font-face {

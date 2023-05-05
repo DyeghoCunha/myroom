@@ -27,18 +27,18 @@ $cyberyellow: rgba(255, 255, 0, 1);
 .banner {
 
   z-index: 1;
-  inset: 10px;
-  margin: 20px;
-  padding: 3rem 7.5rem 6.25rem;
+  inset: 0px;
+  margin: 0px 20px 30px 20px ;
+  padding: 3rem 3.5rem 2.25rem 3rem;
   background-color: $corEscura;
   color: $cyberblue;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+/*   display: grid;
+  grid-template-columns: 1fr 1fr; */
 
   position: relative;
   width: auto;
-  height: auto;
+  height: 450px;
 
   background: $corRoxa;
   border: 6px solid $corFundo;
@@ -47,6 +47,7 @@ $cyberyellow: rgba(255, 255, 0, 1);
     -8px -8px 15px $corClaraLuz,
     8px 8px 25px rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  
 
 }
 
@@ -85,13 +86,24 @@ $cyberyellow: rgba(255, 255, 0, 1);
   margin-bottom: 1rem;
 }
 
+.containerSobre{
+  border: yellow 2px solid;
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+
 .paragrafo {
   position: relative;
   z-index: 1;
+  width:100%;
+  top: 0px;
   font-family: $fonte-normal;
   font-size: 1.5rem;
   line-height: 2rem;
   margin-bottom: 1rem;
+  
 }
 
 .imagens {
@@ -108,8 +120,8 @@ $cyberyellow: rgba(255, 255, 0, 1);
   z-index: 10;
   position: absolute;
   right: -20px;
-  bottom: -65px;
-  width: 25vw;
+  top: -130px;
+  width: 18vw;
   
   background-color: $corEscura;
   color: $corCyano;
@@ -171,6 +183,7 @@ $cyberyellow: rgba(255, 255, 0, 1);
   .imagens>.minhaFoto {
     width: 35vw;
     margin: 0px 40px;
+    top: 60px;
   }
 
   .imagens>.circuloColorido {
@@ -186,7 +199,11 @@ $cyberyellow: rgba(255, 255, 0, 1);
   }
 
   .titulo {
-    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0rem;
+    font-size: 1.5rem;
   }
 
   .paragrafo {
